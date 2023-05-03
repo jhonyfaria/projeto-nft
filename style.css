@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: hsl(217, 54%, 11%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+}
+
+#card {
+    background-color: hsl(216, 50%, 16%);
+    width: 350px;
+    height: 590px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 10px 30px hsla(240, 23%, 6%, 0.623);
+}
+
+#cubo img {
+    background-size: cover;
+    height: 300px;
+    margin: 25px 25px 10px 25px;
+    border-radius: 10px;
+}
+
+#cubo {
+    position: relative;
+}
+
+#cubo:hover::before {
+    content: url(images/icon-view.svg);
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    position: absolute;
+    left: 25px;
+	top: 25px;
+	width: 300px;
+	height: 300px;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+#texto h1 a {
+    color: hsl(0, 0%, 100%);
+    font-size: 0.8em;
+    font-weight: 600;
+    padding: 15px 0px 15px 25px;
+    text-decoration: none;
+}
+
+#texto h1 a:hover {
+    color: hsl(178, 100%, 50%);
+    text-decoration: none;
+}
+
+#texto p {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    padding: 10px 0px 5px 20px ;
+    margin-top: 10px;
+}
+
+.icones {
+    margin-top: 20px;
+    display: flex;    
+}
+
+#icon-eth {
+    margin-left: 20px;
+    margin-top: 1px;
+}
+
+#icon-clock {
+    margin-left: 120px;  
+    margin-top: 2px;  
+}
+
+#text-eth, #text-clock {
+    font-size: 0.9em;
+    margin-left: 5px;
+}
+
+#text-eth {
+    color: hsl(178, 100%, 50%);
+    font-weight: 700;
+}
+
+#text-clock {
+    color: hsl(215, 51%, 70%)
+}
+
+#linha {
+    margin: 20px 25px 0px 21px ;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+
+#perfil {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;   
+}
+
+#avatar-perfil {
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 17px;
+    margin-left: 20px;   
+}
+
+#text-avatar {
+    font-size: 0.9em;
+    color: hsl(215, 51%, 70%);
+    margin-left: 15px;
+    margin-top: -5px;
+}
+
+#text-avatar a {
+    margin-left: 4px;
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    font-weight: 300;
+}
+
+#text-avatar a:hover {
+    color: hsl(178, 100%, 50%)
+}
+
+.attribution { 
+    margin-top: 10px;
+    font-size: 9px; 
+    text-align: center;
+    color: hsl(215, 51%, 70%);; 
+}
+.attribution a { 
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    color: hsl(178, 100%, 50%);
+}
